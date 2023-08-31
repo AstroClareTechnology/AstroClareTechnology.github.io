@@ -74,3 +74,88 @@ form button svg{
     margin: 0 auto;
     width: 45vw;
 }
+@media screen and (max-width: 480px){
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin:0;
+    }
+    body{
+        height: 100vh;
+        background:url(/images/mapofmich.jpeg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        transition: all 2s ease-in-out;
+    }
+    .form-shell{
+        background-color: rgba(162, 134, 189, 0.821);
+        padding: 10px;
+    }
+    h1{
+        text-align: center;
+    }
+    form{
+        height: 60vh;
+        width: 80vw;
+        margin: 0 auto;
+        line-height: 40px;
+    }
+    form label{
+        display: block;
+        font-size: 22px;
+    }
+    form input{
+        width: 80vw;
+        height: 30px;
+        background-color: rgb(54, 0, 77);
+        outline: none;
+        border: none;
+        color: aliceblue;
+        font-size: 24px;
+    }
+    form input:focus{
+        border-bottom: 2px solid white;
+    }
+    form textarea{
+        width: 80vw;
+        height: 100px;
+        color: aliceblue;
+        font-size: 16px;
+        border: none;
+        background-color: rgb(54, 0, 77);
+        outline: none;
+    }
+    form textarea:focus{
+        border-bottom: 2px solid white;
+    }
+    form button{
+        background-color: rgb(86, 0, 123);
+        width: 100px;
+        padding:2px;
+        border: none;
+        cursor: pointer;
+    }
+    form button:hover{
+        transition: all .4s ease-out;
+        background-color: rgb(220, 187, 231);
+    }
+    form button:hover svg{
+        fill: rgb(28, 12, 45);
+        transition: all .4s ease-in;
+    }
+    form button svg{
+        fill: white;
+        font-size: .7em;
+    }
+    .map{
+        margin: 0 auto;
+        width: 30vw;
+        height: 33vh;
+        margin:0;
+    }
+    .map iframe{
+        width: 375px;
+        height: 200px;
+    }
+}
