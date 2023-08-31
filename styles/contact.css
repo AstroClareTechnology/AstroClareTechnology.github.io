@@ -74,7 +74,7 @@ form button svg{
     margin: 0 auto;
     width: 45vw;
 }
-@media screen and (max-width: 480px){
+@media screen and (min-width:390px) and (max-width: 480px){
     *{
         box-sizing: border-box;
         padding: 0;
