@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logonobg.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/ticket.css">
+    <script src="/script/gallery.js" defer></script>
+    <title>Astro Clare Tech - Support</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="menu">
+            <ul>
+                <li><a href="/index.html">home</a></li>
+                <li><a href="/images/Astro Clare Technology Catalog.pdf" download>Download Catalog</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ticket-container">
+    <div class="ticket-intro-section" id="ticket-intro-sectioon">
+        <div class="ticket-intro-section-body" id="ticket-intro-section-body">
+            <p>
+                Our dedicated help desk offers comprehensive support to ensure seamless operations for your tech needs. From password resets, troubleshooting login issues, and resolving slow system performance. Assisting with email setup, printer problems, and software installations, we cover it all. Need access to company resources or guidance on data backup? We're here. Our team handles everything from IT support requests and VPN access to error messages and equipment orders. Our swift, reliable assistance tailored to keep your technology running smoothly, is our focus.
+            </p>
+            <div class="view-box">
+                <img src="/images/Catalog_1.png" alt="View Image" id="viewImage">
+                <br>
+                <button id="gallBtn" onclick="prevImage()"> Previous </button>
+                <button id="gallBtn" onclick="nextImage()"> Next </button>
+            </div>
+            <div class="gallery">
+                <!-- Add  images for a preview section of what is on screen -->
+            </div>
+              
+        </div>
+    </div>
+    <div class="ticket-section" id="ticket-section">
+        <!-- Inserting a form to submit helpdesk tickets. This is seperate from the contact page in order 
+        to better organize the submissions and form formatting.-->
+        <form action="https://formsubmit.co/9f8194077bbeda9f2e0c5781f3dfa665" method="post">
+            <!-- Adding a few input attributes from the form submisson website for some back end information and front end for the customer.-->
+            <input type="hidden" name="_subject" value="New Help Desk Ticket !">
+            <input type="hidden" name="_next" value="astroclaretechnology.github.io/directory/thanks.html">
+            <!-- Fist I want to gather: name, phone, email, company/location base.-->
+            <label for="full-name">Full Name<input type="text" name="full-name" id="name" required></label>
+            <label for="contact-number">Phone Number<input type="tel" name="contact-number" id="number" required></label>
+            <label for="email">Email Address<input type="email" name="email" id="email" required></label>
+            <select name="establishment" id="establishment" required>
+                <option value="Home">Home</option>
+                <option value="Business">Business</option>
+                <option value="Other">Other</option>
+            </select>
+            <!-- Secondly, I want the customer to select the issue they are having and explain in detail.-->
+            <select name="service-need" id="service-need" required>
+                <option value="How do I reset my password?">How do I reset my password?</option>
+                <option value="I can't log in. What should I do">I can't log in. What should I do?</option>
+                <option value="How do I connect to the Wi-Fi?">How do I connect to the Wi-Fi?</option>
+                <option value="My computer is slow. Can you help?">My computer is slow. Can you help?</option>
+                <option value="I'm having trouble accessing my email.">I'm having trouble accessing my email.</option>
+                <option value="How do I set up email on my phone?">How do I set up email on my phone?</option>
+                <option value="What antivirus software do we use?">What antivirus software do we use?</option>
+                <option value="My printer isn't working. What should I check?">My printer isn't working. What should I check?</option>
+                <option value="Can you help me install software?">Can you help me install software?</option>
+                <option value="I accidentally deleted a file. Can it be recovered?">I accidentally deleted a file. Can it be recovered?</option>
+                <option value="How do I update my software?">How do I update my software?</option>
+                <option value="I'm locked out of my account. How can I regain access?">I'm locked out of my account. How can I regain access?</option>
+                <option value="My screen is frozen. What should I do?">My screen is frozen. What should I do?</option>
+                <option value="How do I access my VPN?">How do I access my VPN?</option>
+                <option value="I need access to a specific folder.">I need access to a specific folder.</option>
+                <option value="What's the best way to back up my data?">What's the best way to back up my data?</option>
+                <option value="My computer is showing an error message. What does it mean?">My computer is showing an error message. What does it mean?</option>
+                <option value="How can I can I set up a meeting on my companies calendar?">How can I can I set up a meeting on my companies calendar?</option>
+                <option value="How can I order new equipment?">How can I order new equipment?</option>
+                <option value="I am having trouble with software on my phone. What should I check?">I am having trouble with software on my phone. What should I check?</option>
+                <option value=" Other "> Other </option>
+            </select>
+            <textarea placeholder="Please describe the issue you are having. Include as many details as possible along with any troubleshooting you may have done, this will help accurately diagnose your problem!" name="service-description" id="service-description" cols="30" rows="10" required></textarea>
+            <button type="submit"> Send IT! </button>
+        </form>
+    </div>
+    </div>
+    <footer><p>Astro Clare Technology &copy; | 2023 | <a href="https://clarebear11.github.io" target="_blank">Developer Site</a></p></footer>
+</body>
+</html>
