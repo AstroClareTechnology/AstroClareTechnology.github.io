@@ -231,7 +231,6 @@ li a:hover .hover-effect {
     }
     body{
         background-color: rgb(255, 255, 255);
-        overflow-x: hidden;
     }
     /* Header section */
     header{
@@ -258,7 +257,7 @@ li a:hover .hover-effect {
         margin: 1rem;
     }
     #h1-img{
-        height: 1in;
+        height: .5in;
     }
     .header-1 button{
         padding: 15px 70px;
@@ -286,11 +285,11 @@ li a:hover .hover-effect {
         background:url(/images/learning-bg.jpeg);
         background-position: center;
         background-size: contain;
-        height: 100vh;
+        height: 50vh;
         width: 100vw;
     }
     .learn-section-body{
-        height: 100vh;
+        height: 50vh;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -300,24 +299,24 @@ li a:hover .hover-effect {
     }
     .learn-section-info{
         width: 100vw;
-        height: 80vh;
+        height: 50vh;
         margin: 0 auto;
         font-size: 1em;
         text-align: center;
     }
     .courses-section{
-        font-size: .8em;
-        height: 20vh;
+        font-size: .6em;
+        height: 10vh;
         width: 100vw;
     }
     .courses-body{
-        height: 20vh;
+        height: 10vh;
+        width: 100vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
         margin-top: 5em;
-        padding: 1em;
     }
     .selection svg{
         fill:white;
@@ -368,6 +367,7 @@ li a:hover .hover-effect {
         text-transform: uppercase;
         padding: 10px;
         font-weight: bolder;
+        margin-top: 10px;
         cursor: pointer;
         letter-spacing: 2px;
     }
@@ -383,7 +383,7 @@ li a:hover .hover-effect {
         align-items: center;
         background-color:rgb(127, 127, 127);
         color: rgb(254, 169, 255);
-        font-size: 20px;
+        font-size: 12px;
         letter-spacing: 3px;
     }
     footer a{
