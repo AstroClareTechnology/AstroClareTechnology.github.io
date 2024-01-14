@@ -235,26 +235,27 @@ li a:hover .hover-effect {
     }
     /* Header section */
     header{
-        height: 100vh;
+        height: 50vh;
+        width: 100vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .header-1, .header-2{
-        height: 85vh;
-        width: 50vw;
+        height: 50vh;
+        width: 100vw;
     }
     .header-1 h1{
         width: 100vw;
-        font-size: 50px;
+        font-size: 20px;
         text-transform: uppercase;
         letter-spacing: 3px;
     }
     .header-1 p{
-        font-size: 32px;
+        font-size: 20px;
     }
     .header-1 h1, .header-1  p, .header-1  button{
-        margin: 4rem;
+        margin: 1rem;
     }
     #h1-img{
         height: 1in;
@@ -276,6 +277,7 @@ li a:hover .hover-effect {
     }
     /* Due to the weird look of the image when trying the full header image. I am  just removing the background on the portion I need the most and justifying it to the right side of the screen. */
     .header-2 img{
+        display: none;
         position: absolute;
         transform: translate(100px,-100px);
         bottom: 0;
@@ -285,6 +287,7 @@ li a:hover .hover-effect {
         background-position: center;
         background-size: contain;
         height: 100vh;
+        width: 100vw;
     }
     .learn-section-body{
         height: 100vh;
@@ -296,16 +299,16 @@ li a:hover .hover-effect {
         background-color: rgba(255, 255, 255, 0.949);
     }
     .learn-section-info{
-        width: 80vw;
+        width: 100vw;
         height: 80vh;
         margin: 0 auto;
-        font-size: 2em;
+        font-size: 1em;
         text-align: center;
     }
     .courses-section{
         font-size: .8em;
         height: 20vh;
-        width: 80vw;
+        width: 100vw;
     }
     .courses-body{
         height: 20vh;
@@ -329,15 +332,17 @@ li a:hover .hover-effect {
         background-size: cover;
         background-position: center;
         height: 60vh;
+        width: 100vw;
     }
     .contact-section-body{
         height: 60vh;
+        width: 100vw;
         background-color: rgba(255, 255, 255, 0.900);
         padding: 2rem;
     }
     form{
         height: 50vh;
-        width: 60vw;
+        width: 80vw;
         margin: 0 auto;
         line-height: 40px;
         display: grid;
@@ -371,6 +376,7 @@ li a:hover .hover-effect {
     }
     footer{
         height: 5vh;
+        width: 100vw;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -395,7 +401,7 @@ li a:hover .hover-effect {
         transform: translate(0px,300px);
         justify-content: center;
         align-items: center;
-        display: grid;
+        display: none;
         background-color: white;
     }
     .floatNav ul{
