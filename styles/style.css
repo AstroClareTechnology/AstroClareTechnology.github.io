@@ -304,6 +304,9 @@ li a:hover .hover-effect {
         font-size: 1em;
         text-align: center;
     }
+    .learn-section-info p{
+        padding: 10px 20px 0 20px;
+    }
     .courses-section{
         font-size: .6em;
         height: 10vh;
