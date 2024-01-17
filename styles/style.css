@@ -295,11 +295,11 @@ li a:hover .hover-effect {
         background:url(/images/learning-bg.jpeg);
         background-position: center;
         background-size: contain;
-        height: 60vh;
+        height: 70vh;
         width: 100vw;
     }
     .learn-section-body{
-        height: 60vh;
+        height: 70vh;
         width: 100vw;
         display: flex;
         justify-content: center;
