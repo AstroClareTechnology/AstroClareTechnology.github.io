@@ -196,6 +196,13 @@ footer a{
     font-size: 24px;
     text-decoration: none;
 }
+
+.navBurger{
+    display: none;
+    position:fixed;
+    right: 0;
+    margin: 20px;
+}
 #close{
     display: none;
 }
@@ -450,6 +457,7 @@ li a:hover .hover-effect {
         transform: translate(170px,-30px);
     }
     .navBurger{
+        display: block;
         position:fixed;
         right: 0;
         margin: 20px;
