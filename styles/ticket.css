@@ -260,7 +260,6 @@ body{
 .view-box img {
   width: 90vw;
   height: 50vh;
-  background-color: rebeccapurple;
   border: 1px solid #000;
 }
 .view-box img:hover{
@@ -268,7 +267,7 @@ body{
     transition: all ease-in .3s;
 }
 .view-box button{
-    transform: translateY(50px);
+    transform: translateY(30px);
     padding-left: 20px;
     cursor: pointer;
     font-weight: 100;
@@ -276,7 +275,7 @@ body{
     padding-right: 20px;
     margin: 0 30px 0 30px;
     text-transform: uppercase;
-    background:linear-gradient(rgb(149, 228, 255),rgb(212, 149, 249));
+    background:linear-gradient(rgb(172, 234, 255),rgb(237, 207, 255));
     border: 1px solid ;
     border-radius: 1px;
     font-size: 1rem;
@@ -313,7 +312,7 @@ form label input{
     width: 80vw;
 }
 form select{
-    font-size: 1rem;
+    font-size: .8rem;
     letter-spacing: 2px;
     font-weight: bold;
     width: 80vw;
@@ -355,7 +354,6 @@ form button{
 }
 /* Form styling section */
 /* Looking to create a form that is centered in the screen, minimalistic but pops */
-
 footer{
     height: 5vh;
     text-align: center;
