@@ -190,8 +190,7 @@ footer a{
 }
 body{
     height: 100vh;
-    width: 100vw;
-    background:url(/images/Helpdesk_BG.jpg) no-repeat;
+    background:none;
     background-size: cover;
     background-position: center;
 }
@@ -208,39 +207,40 @@ body{
 }
 .menu ul{
     height: 10vh;
-    width: 90vw;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .menu ul li{
     list-style-type: none;
-    width: 55%;
+    width: 30%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 .menu ul li a{
     text-decoration: none;
+    word-spacing: 5px;
     color: black;
 }
 /* Ticket Container added to allow a more fluent design option for the catalog html section*/
 .ticket-container{
     display: block;
-    height: 90vh;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: rgba(168, 255, 255, 0.868);
 }
 /* Helpdesk Support page styling section */
 .ticket-intro-section{
     height: 100vh;
     width: 100vw;
-    padding:10px 35px;
+    padding:0px 5px;
     text-align: center;
 }
 .ticket-intro-section p {
-    font-size: 3rem;
-    padding: 50px 25px 0px 25px;
+    font-size: 1rem;
+    padding: 20px 20px 0px 20px;
 }
 .gallery {
     display: flex;
@@ -249,8 +249,8 @@ body{
 }
 .gallery img {
   height: 0px;
-  max-width: 100px;
-  margin: 1px;
+  max-width: 0px;
+  margin: 0px;
 }
 .view-box {
   margin-top: 100px;
@@ -260,29 +260,30 @@ body{
 .view-box img {
   width: 90vw;
   height: 50vh;
-  border: 2px solid #000;
+  background-color: rebeccapurple;
+  border: 1px solid #000;
 }
 .view-box img:hover{
     scale: 1.1;
     transition: all ease-in .3s;
 }
 .view-box button{
-    transform: translateY(150%);
+    transform: translateY(50px);
     padding-left: 20px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 100;
     letter-spacing: 3px;
     padding-right: 20px;
     margin: 0 30px 0 30px;
     text-transform: uppercase;
     background:linear-gradient(rgb(149, 228, 255),rgb(212, 149, 249));
-    border: 2px solid ;
-    border-radius: 4px;
-    font-size: 2rem;
+    border: 1px solid ;
+    border-radius: 1px;
+    font-size: 1rem;
 }
 .ticket-section{
-    height: 70vh;
-    width: 100%;
+    height: 80vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     display: grid;
@@ -299,7 +300,8 @@ form label{
     text-align: left;
     font-weight: bold;
     letter-spacing: 2px;
-    font-size: 3rem;
+    text-align: center;
+    font-size: 1rem;
     text-transform: uppercase;
     height: 4vh;
 }
@@ -311,7 +313,7 @@ form label input{
     width: 80vw;
 }
 form select{
-    font-size: 3rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     font-weight: bold;
     width: 80vw;
@@ -324,17 +326,19 @@ form select{
 form textarea{
     background-color: rgba(16, 96, 96, 0);
     padding:0 0 0 0;
+    width: 80vw;
     border: none;
     color: black;
-    font-size: 3rem;
+    font-size: 1rem;
     font-weight: bold;
     outline: none;
     border-bottom: 1px solid black;
 }
 form button{
-    margin-top: 15px;
-    margin-left: 10px;
+    margin-top: 1px;
+    margin-left: 1px;
     height:30px;
+    width: 80vw;
     border: none;
     outline: none;
     border-radius: 3px;
@@ -343,10 +347,10 @@ form button{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    padding: 3rem 25rem 3rem 25rem;
+    font-size: 1rem;
+    padding: 10px 20px 10px 20px;
     color:white;
-    background-color: rgb(9, 102, 102);
+    background-color: rgb(159, 107, 193);
     justify-self: left;
 }
 /* Form styling section */
@@ -358,7 +362,7 @@ footer{
     display: grid;
     background-color: rgb(37, 245, 245);
     color: rgb(0, 0, 0);
-    font-size: 3rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     position: fixed;
     width: 100vw;
