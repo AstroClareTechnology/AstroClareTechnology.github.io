@@ -435,6 +435,9 @@ li a:hover .hover-effect {
         font-size: 2rem;
         text-decoration: none;
     }
+    .navBurger{
+        display: block;
+    }
     #exit{
         display: block;
     }
