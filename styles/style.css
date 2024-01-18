@@ -49,6 +49,9 @@ header{
     background-color: rgb(145, 233, 255);
     transition: all .5s ease-in-out;
 }
+.fa-brands{
+    margin-left: 20px;
+}
 /* Due to the weird look of the image when trying the full header image. I am  just removing the background on the portion I need the most and justifying it to the right side of the screen. */
 .header-2 img{
     position: absolute;
@@ -193,6 +196,9 @@ footer a{
     font-size: 24px;
     text-decoration: none;
 }
+#close{
+    display: none;
+}
 /* Simple code to allow user to see what section they are hovering over in Desktop mode */
 /* Initially hide the hover text */
 .hover-effect {
@@ -247,7 +253,7 @@ li a:hover .hover-effect {
     }
     .header-1 h1{
         width: 100vw;
-        font-size: 20px;
+        font-size: 17px;
         text-transform: uppercase;
         letter-spacing: 3px;
     }
@@ -259,12 +265,12 @@ li a:hover .hover-effect {
         padding: 20px;
     }
     #h1-img{
-        height: .5in;
+        height: .3in;
     }
     .header-1 button{
         padding: 10px 20px;
-        border: solid rgb(145, 233, 255) 2px;
-        background:none;
+        border: solid rgb(255, 255, 255) 2px;
+        background: rgb(210, 255, 255);
         border-radius: 4px;
         font-size: 10px;
         letter-spacing: 1px;
@@ -274,10 +280,10 @@ li a:hover .hover-effect {
     .header-1 button a{
         color: black;
     }
-   /* .header-1 button:hover{
-        background-color: rgb(145, 233, 255);
-        transition: all .5s ease-in-out;
-    }*/
+    .header-1 button:hover{
+        background-color: none;
+        transition: none;
+    }
     /* Due to the weird look of the image when trying the full header image. I am  just removing the background on the portion I need the most and justifying it to the right side of the screen. */
     .header-2 img{
         display: none;
@@ -289,11 +295,11 @@ li a:hover .hover-effect {
         background:url(/images/learning-bg.jpeg);
         background-position: center;
         background-size: contain;
-        height: 60vh;
+        height: 70vh;
         width: 100vw;
     }
     .learn-section-body{
-        height: 60vh;
+        height: 70vh;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -313,11 +319,11 @@ li a:hover .hover-effect {
     }
     .courses-section{
         font-size: .6em;
-        height: 10vh;
+        height: 5vh;
         width: 100vw;
     }
     .courses-body{
-        height: 10vh;
+        height: 5vh;
         width: 100vw;
         display: flex;
         justify-content: space-between;
@@ -370,7 +376,7 @@ li a:hover .hover-effect {
     form button{
         background-color: rgb(145, 233, 255);
         border: none;
-        color: rgb(115, 115, 115);
+        color: rgb(71, 71, 71);
         text-transform: uppercase;
         padding: 10px;
         font-weight: bolder;
@@ -391,30 +397,36 @@ li a:hover .hover-effect {
         background-color:rgb(127, 127, 127);
         color: rgb(254, 169, 255);
         font-size: 12px;
+        font-weight: bolder;
         letter-spacing: 3px;
     }
     footer a{
         color: rgb(145, 233, 255);
+        font-weight: bold;
         text-decoration: none;
     }
     /* Floating navigation styling section */
     /* The goal here is to create a floating menu that is using absolute or fixed postioniong. In the responsive views I would like to use the Astro Clare Technology Logo as the menu opening button */
     /* Created a border to give the menu a more clean look for the desktop/tv responsive views */
     .floatNav{
-        border: solid 1px black;
+        border: none;
+        border-bottom: none;
+        box-shadow: 0px 20px 50px rgb(170, 234, 255);
         position: fixed;
-        height: 40vh;
-        width: 3.5vw;
-        transform: translate(0px,300px);
+        height: 10vh;
+        width: 100vw;
+        transform: translate(0px,0px);
         justify-content: center;
         align-items: center;
         display: none;
-        background-color: white;
+        z-index: 1;
+        background-color: rgb(185, 238, 255);
     }
     .floatNav ul{
-        height: 40vh;
+        height: 10vh;
+        width: 100vw;
         list-style-type: none;
-        display:grid;
+        display:flex;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -424,31 +436,42 @@ li a:hover .hover-effect {
         scroll-behavior: smooth;
     }
     .floatNav ul li{
-        border-bottom: solid 1px black;
+        border-bottom: none;
+        width: 20%;
     }
     .floatNav ul li a{
-        color: rgb(61, 216, 255);
+        color: rgb(0, 0, 0);
         font-size: 24px;
         text-decoration: none;
+    }
+    #close{
+        display: block;
+        position: absolute;
+        transform: translate(170px,-30px);
+    }
+    .navBurger{
+        position:fixed;
+        right: 0;
+        margin: 20px;
     }
     /* Simple code to allow user to see what section they are hovering over in Desktop mode */
     /* Initially hide the hover text */
     .hover-effect {
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
-        color: #000;
+        color: #00000000;
         position: absolute;
         right: -100px; 
         top: 50%;
         transform: translate(50%,-50%);
-        background: #ffffff; /* Adjust background color */
+        background: #ffffff00; /* Adjust background color */
         padding: 5px 50px; /* Adjust padding */
         border-radius: 4px; /* Adjust border-radius */
-        box-shadow: 0 2px 4px rgb(254, 169, 255); /* Optional: Adjust box shadow */
+        box-shadow: 0 2px 4px rgba(254, 169, 255, 0); /* Optional: Adjust box shadow */
     }
     /* Show the hover text on hover */
     li a:hover .hover-effect {
-        opacity: 1;
+        opacity: 0;
     }
     /* Helpdesk Support page styling section */
     .ticket-intro-section{
