@@ -256,7 +256,7 @@ li a:hover .hover-effect {
         font-size: 20px;
     }
     .header-1 h1, .header-1 p, .header-1 button{
-        margin:3px 0px 0px 0px;
+        margin:0px 0px 0px 0px;
         padding: 20px;
     }
     #h1-img{
@@ -439,6 +439,9 @@ li a:hover .hover-effect {
     }
     .navBurger{
         display: block;
+        position:absolute;
+        right: 0;
+        margin: 20px;
     }
     #exit{
         display: block;
