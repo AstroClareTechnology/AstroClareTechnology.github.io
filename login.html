@@ -50,13 +50,13 @@
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required>
 
-    <button type="button" onclick="login()">Login</button>
+    <button id="loginBtn" type="button" onclick="login()">Login</button>
     <button id="signupBtn" type="button" onclick="signup()">Sign Up</button>
 
 </form>
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
-    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js";
 
     // Firebase configuration
     const firebaseConfig = {
