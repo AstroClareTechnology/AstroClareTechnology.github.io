@@ -32,7 +32,7 @@
             box-sizing: border-box;
         }
         button {
-            background-color: #ff6d29;
+            background-color: #00678c;
             color: white;
             padding: 10px;
             border: none;
@@ -51,7 +51,76 @@
     <input type="password" id="password" name="password" required>
 
     <button type="button" onclick="login()">Login</button>
+    <button id="signupBtn" type="button" onclick="signup()">Sign Up</button>
+
 </form>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js";
+
+    // Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyD2lKo8fUMsl4z7VaSjNVs8qVEDF5teXkk",
+        authDomain: "my-userlogin-14bd9.firebaseapp.com",
+        projectId: "my-userlogin-14bd9",
+        storageBucket: "my-userlogin-14bd9.appspot.com",
+        messagingSenderId: "911606012565",
+        appId: "1:911606012565:web:20553bd82d4ed416fe999c",
+        measurementId: "G-MDRJC2DJVE"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    // Define the login function in the global scope
+    window.login = function () {
+        console.log("Function is Working!")
+
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // User successfully logged in
+                const user = userCredential.user;
+                // Redirect to another page
+                window.location.href = 'index.html';
+            })
+            .catch((error) => {
+                // Handle errors during login
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.error(errorCode, errorMessage);
+            });
+    };
+    // Define the signup function in the global scope
+       // Define the signup function in the global scope
+       window.signup = function () {
+        console.log("Signup function is working!");
+
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // User successfully registered
+                const user = userCredential.user;
+                // Redirect to another page or perform other actions
+                console.log("User registered:", user);
+            })
+            .catch((error) => {
+                // Handle errors during signup
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.error(errorCode, errorMessage);
+            });
+    };
+    // Attach the login function to the button click event
+    document.getElementById('loginBtn').addEventListener('click', login);
+    document.getElementById('signupBtn').addEventListener('click', signup);
+
+</script>
 
 </body>
 </html>
