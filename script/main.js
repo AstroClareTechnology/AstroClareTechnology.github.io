@@ -57,4 +57,4 @@ function mobMenu(){
 }
             
     // Attach the login function to the button click event
-    document.getElementById('loginBtn').addEventListener('click', login)
+    document.getElementById('loginBtn').addEventListener('click', login);
